@@ -5,7 +5,9 @@
       "Bash(grep -E '.{10,}')",
       "Bash(gunzip)",
       "Bash(tar -tf /tmp/design-bundle.tar)",
-      "Bash(tar -xOf /tmp/design-bundle.tar louis-fowler/project/portfolio.html)"
+      "Bash(tar -xOf /tmp/design-bundle.tar louis-fowler/project/portfolio.html)",
+      "Bash(gunzip -c \"/Users/louis/.claude/projects/-Users-louis-Documents-Personal-louis-fowler/eba7be22-c767-4345-8d82-71c557019bbf/tool-results/webfetch-1777884925724-l443x4.bin\")",
+      "Bash(tar -xO \"louis-fowler/project/portfolio.html\")"
     ]
   }
 }
