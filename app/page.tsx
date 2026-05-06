@@ -61,19 +61,19 @@ export default function Home() {
           </a>
           <a
             className="link"
-            href="https://github.com/louisfowler"
+            href="https://github.com/louis-fowler"
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/louisfowler →
+            github.com/louis-fowler →
           </a>
           <a
             className="link"
-            href="https://linkedin.com/in/louisfowler"
+            href="https://www.linkedin.com/in/louis-fowler-9046aa195/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin.com/in/louisfowler →
+            linkedin.com/in/louis-fowler →
           </a>
         </div>
 
