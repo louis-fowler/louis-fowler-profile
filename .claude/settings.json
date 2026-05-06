@@ -5,7 +5,11 @@
       "Bash(grep -E '.{10,}')",
       "Bash(gunzip)",
       "Bash(tar -tf /tmp/design-bundle.tar)",
-      "Bash(tar -xOf /tmp/design-bundle.tar louis-fowler/project/portfolio.html)"
+      "Bash(tar -xOf /tmp/design-bundle.tar louis-fowler/project/portfolio.html)",
+      "Bash(cp /Users/louis/Documents/Personal/louis-fowler/public/favicon/favicon.svg /Users/louis/Documents/Personal/louis-fowler/app/icon.svg)",
+      "Bash(cp /Users/louis/Documents/Personal/louis-fowler/public/favicon/favicon-32.png /Users/louis/Documents/Personal/louis-fowler/app/icon1.png)",
+      "Bash(cp /Users/louis/Documents/Personal/louis-fowler/public/favicon/favicon-16.png /Users/louis/Documents/Personal/louis-fowler/app/icon2.png)",
+      "Bash(cp /Users/louis/Documents/Personal/louis-fowler/public/favicon/apple-touch-icon.png /Users/louis/Documents/Personal/louis-fowler/app/apple-icon.png)"
     ]
   }
 }
