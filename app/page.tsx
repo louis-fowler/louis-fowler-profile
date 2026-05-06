@@ -9,7 +9,7 @@ const coreSkills = [
   "REST",
   "Vitest",
   "SSR",
-  "Git Actions",
+  "GitHub Actions",
   "Sentry",
   "Claude Code",
 ];
@@ -112,20 +112,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <footer className="colophon">
+      <footer className="colophon">
         <div className="built-row">
           <span className="built-label">Built with</span>
           <span className="tag">Next.js</span>
           <span className="tag">TypeScript</span>
           <span className="tag">Claude Design</span>
-          <span className="tag">GitHub Actions</span>
+          {/* <span className="tag">GitHub Actions</span>
           <span className="tag">S3</span>
-          <span className="tag">CloudFront</span>
+          <span className="tag">CloudFront</span> */}
         </div>
         <p className="quip">
           A CV, basically. <em>Treated like a product.</em>
         </p>
-      </footer> */}
+      </footer>
     </main>
   );
 }
