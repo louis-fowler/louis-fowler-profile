@@ -111,6 +111,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* <footer className="colophon">
+        <div className="built-row">
+          <span className="built-label">Built with</span>
+          <span className="tag">Next.js</span>
+          <span className="tag">TypeScript</span>
+          <span className="tag">Claude Design</span>
+          <span className="tag">GitHub Actions</span>
+          <span className="tag">S3</span>
+          <span className="tag">CloudFront</span>
+        </div>
+        <p className="quip">
+          A CV, basically. <em>Treated like a product.</em>
+        </p>
+      </footer> */}
     </main>
   );
 }
