@@ -87,6 +87,7 @@ a {
     padding: 4px 10px;
     cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
+    width: 3.75rem;
 }
 
 .theme-toggle:hover {

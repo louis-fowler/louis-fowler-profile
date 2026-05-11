@@ -9,7 +9,7 @@ const coreSkills = [
   "REST",
   "Vitest",
   "SSR",
-  "Git Actions",
+  "GitHub Actions",
   "Sentry",
   "Claude Code",
 ];
@@ -61,19 +61,19 @@ export default function Home() {
           </a>
           <a
             className="link"
-            href="https://github.com/louisfowler"
+            href="https://github.com/louis-fowler"
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/louisfowler →
+            github.com/louis-fowler →
           </a>
           <a
             className="link"
-            href="https://linkedin.com/in/louisfowler"
+            href="https://www.linkedin.com/in/louis-fowler-9046aa195/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin.com/in/louisfowler →
+            linkedin.com/in/louis-fowler →
           </a>
         </div>
 
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <footer className="colophon">
+      <footer className="colophon">
         <div className="built-row">
           <span className="built-label">Built with</span>
           <span className="tag">Next.js</span>
@@ -125,7 +125,7 @@ export default function Home() {
         <p className="quip">
           A CV, basically. <em>Treated like a product.</em>
         </p>
-      </footer> */}
+      </footer>
     </main>
   );
 }
