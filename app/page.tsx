@@ -37,8 +37,7 @@ export default function Home() {
         </h1>
         <div className="hero-foot">
           <p className="lede">
-            Senior front-end developer &amp; people lead. Five years building
-            high-traffic eCommerce, mentoring devs, and shipping fast.
+            Senior front-end developer &amp; people lead. Six years building high-traffic web products, mentoring devs, and shipping fast.
           </p>
           <div className="role">
             <div>SR. FRONT-END DEV</div>
