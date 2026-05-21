@@ -12,7 +12,13 @@
       "Bash(cp /Users/louis/Documents/Personal/louis-fowler/public/favicon/apple-touch-icon.png /Users/louis/Documents/Personal/louis-fowler/app/apple-icon.png)",
       "Bash(tar -xOf /tmp/design-bundle.tar louis-fowler/project/portfolio.html)",
       "Bash(gunzip -c \"/Users/louis/.claude/projects/-Users-louis-Documents-Personal-louis-fowler/eba7be22-c767-4345-8d82-71c557019bbf/tool-results/webfetch-1777884925724-l443x4.bin\")",
-      "Bash(tar -xO \"louis-fowler/project/portfolio.html\")"
+      "Bash(tar -xO \"louis-fowler/project/portfolio.html\")",
+      "Bash(gunzip -c \"/Users/louis/.claude/projects/-Users-louis-Documents-Personal-louis-fowler/faa8076f-68db-4df9-8d71-99bf02cd1d30/tool-results/webfetch-1779335534468-eg867c.bin\")",
+      "Bash(tar -x -C design_bundle)",
+      "Bash(mkdir -p /Users/louis/Documents/Personal/louis-fowler/app/work/\\\\[slug\\\\])"
+    ],
+    "additionalDirectories": [
+      "/Users/louis/Documents/Personal/louis-fowler/app/work"
     ]
   }
 }
