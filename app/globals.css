@@ -174,18 +174,29 @@ a {
     display: block;
     font-size: 15px;
     color: var(--fg);
-    border-bottom: 1px solid var(--line);
     padding: 7px 0;
     font-weight: 500;
-    transition: padding-left 0.15s ease;
+    position: relative;
+    transition: transform 0.15s ease;
+}
+
+.link:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--line);
+    transition: transform 0.15s ease;
 }
 
 .link:hover {
-    padding-left: 8px;
+    transform: translateX(8px);
 }
 
-.link:last-child {
-    border-bottom: none;
+.link:hover::after {
+    transform: translateX(-8px);
 }
 
 .tags {
@@ -222,23 +233,34 @@ a {
     align-items: baseline;
     gap: 10px;
     padding: 10px 0;
-    border-bottom: 1px solid var(--line);
+    position: relative;
     color: var(--fg);
     text-decoration: none;
-    transition: padding-left 0.15s ease, color 0.15s ease;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.work-row:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--line);
+    transition: transform 0.15s ease;
 }
 
 .work-row:first-child {
     padding-top: 0;
 }
 
-.work-row:last-child {
-    border-bottom: none;
+.work-row:hover {
+    transform: translateX(6px);
+    color: var(--accent);
 }
 
-.work-row:hover {
-    padding-left: 6px;
-    color: var(--accent);
+.work-row:hover::after {
+    transform: translateX(-6px);
 }
 
 .work-row .num {
@@ -488,12 +510,19 @@ html[data-vt="back"]::view-transition-new(root) {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    transition: color 0.15s ease, gap 0.15s ease;
+    transition: color 0.15s ease;
+}
+
+.back-link span:last-child {
+    transition: transform 0.15s ease;
 }
 
 .back-link:hover {
     color: var(--accent);
-    gap: 10px;
+}
+
+.back-link:hover span:last-child {
+    transform: translateX(4px);
 }
 
 .case-hero {

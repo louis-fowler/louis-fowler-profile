@@ -1,5 +1,6 @@
 import { Link } from "next-view-transitions";
 import ThemeToggle from "./components/ThemeToggle";
+import { caseStudies } from "./data/caseStudies";
 
 const coreSkills = [
   "Vue 2/3",
@@ -102,30 +103,16 @@ export default function Home() {
         <div className="cell">
           <div className="meta meta-accent">04 — Selected Work</div>
           <div className="work">
-            <Link className="work-row" href="/work/checkout-rebuild">
-              <span className="num">01</span>
-              <span>
-                <div className="title">eCommerce Checkout Rebuild</div>
-                <div className="desc">PayPal · Windcave · Apple/Google Pay</div>
-              </span>
-              <span className="arrow">→</span>
-            </Link>
-            <Link className="work-row" href="/work/vue-ui-framework">
-              <span className="num">02</span>
-              <span>
-                <div className="title">Vue UI Framework</div>
-                <div className="desc">Internal CMS component library</div>
-              </span>
-              <span className="arrow">→</span>
-            </Link>
-            <Link className="work-row" href="/work/growthbook">
-              <span className="num">03</span>
-              <span>
-                <div className="title">GrowthBook A/B Testing</div>
-                <div className="desc">GTM + BigQuery experiment logging</div>
-              </span>
-              <span className="arrow">→</span>
-            </Link>
+            {Object.entries(caseStudies).map(([slug, study]) => (
+              <Link key={slug} className="work-row" href={`/work/${slug}`}>
+                <span className="num">{study.num}</span>
+                <span>
+                  <div className="title">{study.name}</div>
+                  <div className="desc">{study.tagline}</div>
+                </span>
+                <span className="arrow">→</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
