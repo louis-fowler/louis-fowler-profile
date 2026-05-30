@@ -32,7 +32,7 @@ export default async function WorkPage({
 
   const imagesDir = path.join(process.cwd(), "public/caseStudyImages", slug);
   const images = fs.existsSync(imagesDir)
-    ? fs.readdirSync(imagesDir).filter((f) => /\.(png|jpe?g|webp)$/i.test(f))
+    ? fs.readdirSync(imagesDir).filter((f) => /\.(png|jpe?g|webp)$/i.test(f)).sort()
     : [];
 
   return (

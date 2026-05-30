@@ -106,10 +106,10 @@ export default function Home() {
             {Object.entries(caseStudies).map(([slug, study]) => (
               <Link key={slug} className="work-row" href={`/work/${slug}`}>
                 <span className="num">{study.num}</span>
-                <span>
+                <div>
                   <div className="title">{study.name}</div>
                   <div className="desc">{study.tagline}</div>
-                </span>
+                </div>
                 <span className="arrow">→</span>
               </Link>
             ))}

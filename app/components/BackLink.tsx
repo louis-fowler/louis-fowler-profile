@@ -15,6 +15,16 @@ export function BackLink({ href = "/", children, className }: BackLinkProps) {
       href={href}
       className={className}
       onClick={(e) => {
+        if (
+           e.defaultPrevented ||
+           e.button !== 0 ||
+           e.metaKey ||
+           e.ctrlKey ||
+           e.shiftKey ||
+           e.altKey
+         ) {
+           return;
+         }
         e.preventDefault();
         const el = document.documentElement;
         el.setAttribute("data-vt", "back");
