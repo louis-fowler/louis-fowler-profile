@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight, JetBrains_Mono } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
+import { VtCleanup } from "./components/VtCleanup";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <body>
           <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+          <VtCleanup />
           {children}
         </body>
       </html>
