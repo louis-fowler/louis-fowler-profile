@@ -584,7 +584,6 @@ html[data-vt="back"]::view-transition-new(root) {
 
 .case-gallery .frame {
     width: 100%;
-    aspect-ratio: 9 / 16;
     border: 1px solid var(--line);
     background: var(--cell-bg);
 }

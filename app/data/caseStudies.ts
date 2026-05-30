@@ -35,7 +35,7 @@ const raw: Record<string, Omit<CaseStudy, "num">> = {
     ],
     stackTags: ["Vue 3", "Vite", "Pinia", "SCSS", "REST", "Sentry"],
   },
-  "john-fowler-restoration": {
+  "jf-restoration": {
     name: "John Fowler Restoration",
     tagline: "Next.js · AWS · MUI",
     kicker: "Full-stack",

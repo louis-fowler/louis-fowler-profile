@@ -1,3 +1,6 @@
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import ThemeToggle from "../../components/ThemeToggle";
 import { BackLink } from "../../components/BackLink";
@@ -26,6 +29,11 @@ export default async function WorkPage({
   const { slug } = await params;
   const study = caseStudies[slug];
   if (!study) notFound();
+
+  const imagesDir = path.join(process.cwd(), "public/caseStudyImages", slug);
+  const images = fs.existsSync(imagesDir)
+    ? fs.readdirSync(imagesDir).filter((f) => /\.(png|jpe?g|webp)$/i.test(f))
+    : [];
 
   return (
     <main className="case-page">
@@ -63,10 +71,23 @@ export default async function WorkPage({
       </section>
 
       <section className="case-body">
-        <div className="case-gallery">
-          <div className="frame" />
-          <div className="frame" />
-        </div>
+        {images.length > 0 && (
+          <div className="case-gallery">
+            {images.map((img, i) => (
+              <div className="frame" key={img}>
+                <Image
+                  src={`/caseStudyImages/${slug}/${img}`}
+                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
+                  priority={i === 0}
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="case-content">
           <section>
