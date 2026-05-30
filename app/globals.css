@@ -568,6 +568,11 @@ html[data-vt="back"]::view-transition-new(root) {
     margin-right: 6px;
 }
 
+.github-link {
+    display: inline-flex;
+    color: var(--accent);
+}
+
 .case-body {
     display: grid;
     grid-template-columns: 1fr 1fr;

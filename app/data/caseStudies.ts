@@ -4,7 +4,7 @@ export interface CaseStudy {
   tagline: string;
   kicker: string;
   title: string;
-  meta: { role: string; team: string; year: string; stack: string };
+  meta: { role: string; team: string; year: string; stack: string, github: string | null };
   brief: string;
   approach: string;
   outcomes: string[];
@@ -22,6 +22,7 @@ const raw: Record<string, Omit<CaseStudy, "num">> = {
       team: "Blackpepper",
       year: "2023 — 2024",
       stack: "Vue 3, Vite, Pinia",
+      github: null,
     },
     brief:
       "Build a new B2C checkout flow from scratch for high-traffic eCommerce sites, optimised for performance, reliability, and mobile UX. Replace a legacy implementation that was slow, and hard to extend",
@@ -45,6 +46,7 @@ const raw: Record<string, Omit<CaseStudy, "num">> = {
       team: "Solo",
       year: "2025",
       stack: "Next.js, AWS, MUI",
+      github: 'https://github.com/louis-fowler/jf-restoration',
     },
     brief:
       "Build a clean eCommerce site for a New Zealand furniture restorer — and give the client the tools to manage it themselves. No CMS licence, no database, no third-party lock-in.",
@@ -68,6 +70,7 @@ const raw: Record<string, Omit<CaseStudy, "num">> = {
       team: "Blackpepper",
       year: "2023 — 2024",
       stack: "Vue, SCSS",
+      github: null,
     },
     brief:
       "Design and build a reusable Vue component library for internal tools — consistent patterns, shared styling conventions, and baked-in accessibility standards.",
@@ -90,6 +93,7 @@ const raw: Record<string, Omit<CaseStudy, "num">> = {
       team: "Blackpepper",
       year: "2025",
       stack: "GrowthBook, GTM, BigQuery",
+      github: null,
     },
     brief:
       "Integrate GrowthBook for A/B testing and feature flags, plus GTM and BigQuery for experiment metric logging — giving the product team real data on what actually moves the needle.",
